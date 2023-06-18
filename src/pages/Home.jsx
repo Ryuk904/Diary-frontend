@@ -16,7 +16,7 @@ const Home = ()=>{
 
     useEffect(()=>{
         const fetchPosts = async ()=>{
-            const response = await fetch('https://diary-backend-plmn.onrender.com/api/posts',{
+            const response = await fetch('http://localhost:4000/api/posts',{
                 headers:{
                     'Authorization':`Bearer ${user.token}`
                 }
